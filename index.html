@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Id kortti</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -21,10 +22,11 @@
             class="navbar-brand mb-0 h1">
                 <img 
                 class="d-inline-block align-top" 
-                src="download.jpg" alt="Logo" width="30" height="30">
+                src="img/logo.jpg" alt="Logo" width="30" height="30">
                 Snäppi kortti
         </a>
     <!-- Logo sekä otsikko -->
+
     <!-- Menu buttonin sääntöjä. Vastaa responsiivisesta navbarista -->
         <button 
         type="button"
@@ -38,39 +40,47 @@
         <span class="navbar-toggler-icon"></span>
         </button>
     <!-- Menu buttonin sääntöjä. Vastaa responsiivisesta navbarista -->
+
     <!-- Nav barin itemit Home, Features, Pricing, Contacts -->
         <div 
             class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a href="#" class="nav-link active">
+                        <a href="#home" class="nav-link active">
                             Home
                         </a>
                     </li>
                     <li class="nav-item active">
-                        <a href="#" class="nav-link">
+                        <a href="#features" class="nav-link">
                             Features
                         </a>
                     </li>
                     <li class="nav-item active">
-                        <a href="#" class="nav-link">
+                        <a href="#pricing" class="nav-link">
                             Pricing
                         </a>
                     </li>
                     <li class="nav-item active">
-                        <a href="#" class="nav-link">
+                        <a href="#team" class="nav-link">
+                            Tiimi
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#contacts" class="nav-link">
                             Contacts
                         </a>
                     </li>
                 </ul>
         </div>
     <!-- Nav barin itemit Home, Features, Pricing, Contacts -->
-        <form class="d-flex">
+    <!-- SEARCH FORM -->
+        <!-- <form class="d-flex">
             <input type="text" class="form-control me-2">
             <button type=:submit class="btn btn-outline-primary">
                 Search
             </button>
-        </form>
+        </form> -->
+    <!-- SEARCH FORM -->
         </div>
     </nav>
 
@@ -83,7 +93,7 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-            <img src="/img/home1.jpg" class="d-block w-100" alt="home1">
+            <img src="img/home1.jpg" class="d-block w-100" alt="home1">
                 <div class="carousel-caption">
                     <h5>Lorem ipsum dolor sit.</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo vero, possimus laudantium recusandae impedit eligendi.</p>
@@ -91,7 +101,7 @@
                 </div>
                 </div>
                 <div class="carousel-item">
-                <img src="/img/home2.jpg" class="d-block w-100" alt="home2">
+                <img src="img/home2.jpg" class="d-block w-100" alt="home2">
                     <div class="carousel-caption">
                     <h5>Lorem ipsum dolor sit.</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo vero, possimus laudantium recusandae impedit eligendi.</p>
@@ -99,7 +109,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="/img/home3.jpg" class="d-block w-100 h-100" alt="...">
+                <img src="img/home3.jpg" class="d-block w-100 h-100" alt="home3">
                 <div class="carousel-caption">
                     <h5>Lorem ipsum dolor sit.</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo vero, possimus laudantium recusandae impedit eligendi.</p>
@@ -125,23 +135,249 @@
                 <div class="col-lg-4 col-md-12 col-12">
                     <div class="about-img">
                         <!-- <img src="/img/article.jpg" alt="article" class="img-fluid"> -->
-                        <img src="/img/article.jpg" alt="article" class="img-fluid">
+                        <img src="img/article.jpg" alt="article" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
                     <div class="about-text">
-                        <h2>Lorem ipsum dolor sit. <br>Lorem, ipsum.</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sint atque explicabo quisquam harum. Odio, aliquam ratione aspernatur, aperiam architecto nobis consectetur dolor ab porro nam commodi ipsam illum asperiores.</p>
-                        <a href="#" class="btn btn-warning">Learn more</a>
+                        <h2>Vastaavaa et löydä muualta</h2>
+                        <p>Snäppi kortti on suomen ensimmäinen ja ainoa eli vastaavaa et löydä muualta</p>
+                        <!-- <a href="#" class="btn btn-warning">Learn more</a> -->
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- ABOUT SECTION-->
+    <!-- ABOUT SECTION -->
 
+    <!-- SERVICES SECTION -->
+    <section id="services" class="services section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5">
+                        <h2>Meidän Palvelut</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Expedita alias autem assumenda reiciendis nesciunt maiores?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-white text-center bg-dark pb-2">
+                        <div class="card-body">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <h3 class="card-title">Paras Laatu</h3>
+                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam fuga odio nobis tempora quaerat dicta ad, aliquam repellat iure deleniti sed, hic velit sint ullam!</p>
+                            <button class="btn btn-warning text-dark">Read More!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-white text-center bg-dark pb-2">
+                        <div class="card-body">
+                            <i class="bi bi-person-check-fill"></i>
+                            <h3 class="card-title">Personoitua Palvelua</h3>
+                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam fuga odio nobis tempora quaerat dicta ad, aliquam repellat iure deleniti sed, hic velit sint ullam!</p>
+                            <button class="btn btn-warning text-dark">Read More!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-white text-center bg-dark pb-2">
+                        <div class="card-body">
+                            <i class="bi bi-incognito"></i>
+                            <h3 class="card-title">Suomen Ainut Toimija</h3>
+                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam fuga odio nobis tempora quaerat dicta ad, aliquam repellat iure deleniti sed, hic velit sint ullam!</p>
+                            <button class="btn btn-warning text-dark">Read More!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SERVICES SECTION -->
+
+    <!-- PORTFOLIO SECTION -->
+    <section id="portfolio" class="portfolio section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5">
+                        <h2>Meidän Tuotteet</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Expedita alias autem assumenda reiciendis nesciunt maiores?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-center bg-white pb-2">
+                        <div class="card-body text-dark">
+                            <div class="img-area mb-47">
+                                <img src="img/product1.jpg" alt="product1" class="img-fluid">
+                            </div>
+                            <h3 class="card-title">Snäppi Kortti Pinkki</h3>
+                            <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur consequatur facere perferendis quaerat doloremque ea consequuntur unde, culpa officiis consectetur.</p>
+                            <button class="btn bg-warning text-dark">Learn More!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-center bg-white pb-2">
+                        <div class="card-body text-dark">
+                            <div class="img-area mb-47">
+                                <img src="img/product2.jpg" alt="product2" class="img-fluid">
+                            </div>
+                            <h3 class="card-title">Snäppi Kortti Musta</h3>
+                            <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur consequatur facere perferendis quaerat doloremque ea consequuntur unde, culpa officiis consectetur.</p>
+                            <button class="btn bg-warning text-dark">Learn More!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-center bg-white pb-2">
+                        <div class="card-body text-dark">
+                            <div class="img-area mb-47">
+                                <img src="img/product3.jpg" alt="product3" class="img-fluid">
+                            </div>
+                            <h3 class="card-title">Instagram Kortti Musta</h3>
+                            <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur consequatur facere perferendis quaerat doloremque ea consequuntur unde, culpa officiis consectetur.</p>
+                            <button class="btn bg-warning text-dark">Learn More!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PORTFOLIO SECTION -->
+
+    <!-- TEAM SECTION -->
+    <section id="team" class="team section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5">
+                        <h2>Meidän Tiimi</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Expedita alias autem assumenda reiciendis nesciunt maiores?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="img/people1.jpg" alt="" class="img-fluid rounded-circle">
+                            <h3 class="card-title py-2">Joona Kojo</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet odio cupiditate, asperiores totam voluptatum quod.</p>
+
+                            <p class="socials">
+                                <i class="bi bi-twitter text-dark mx-1"></i>
+                                <i class="bi bi-facebook text-dark mx-1"></i>
+                                <i class="bi bi-linkedin text-dark mx-1"></i>
+                                <i class="bi bi-instagram text-dark mx-1"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="img/people2.jpg" alt="" class="img-fluid rounded-circle">
+                            <h3 class="card-title py-2">Lorem, ipsum.</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet odio cupiditate, asperiores totam voluptatum quod.</p>
+
+                            <p class="socials">
+                                <i class="bi bi-twitter text-dark mx-1"></i>
+                                <i class="bi bi-facebook text-dark mx-1"></i>
+                                <i class="bi bi-linkedin text-dark mx-1"></i>
+                                <i class="bi bi-instagram text-dark mx-1"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="img/people3.jpg" alt="" class="img-fluid rounded-circle">
+                            <h3 class="card-title py-2">Lorem, ipsum.</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet odio cupiditate, asperiores totam voluptatum quod.</p>
+
+                            <p class="socials">
+                                <i class="bi bi-twitter text-dark mx-1"></i>
+                                <i class="bi bi-facebook text-dark mx-1"></i>
+                                <i class="bi bi-linkedin text-dark mx-1"></i>
+                                <i class="bi bi-instagram text-dark mx-1"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="img/people4.jpg" alt="" class="img-fluid rounded-circle">
+                            <h3 class="card-title py-2">Lorem, ipsum.</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet odio cupiditate, asperiores totam voluptatum quod.</p>
+
+                            <p class="socials">
+                                <i class="bi bi-twitter text-dark mx-1"></i>
+                                <i class="bi bi-facebook text-dark mx-1"></i>
+                                <i class="bi bi-linkedin text-dark mx-1"></i>
+                                <i class="bi bi-instagram text-dark mx-1"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TEAM SECTION -->
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5">
+                        <h2>Ota yhteyttä</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Expedita alias autem assumenda reiciendis nesciunt maiores?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row m-0">
+                <div class="col-md-12 p-0 pt-4 pb-4">
+                    <form action="#" class="bg-light p-4.m-auto">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" required placeholder="Koko Nimi">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" required placeholder="Sähköposti">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <textarea rows="3" required class="form-control" placeholder="Kerro ajatuksistasi meille"></textarea>
+                                </div>
+                            </div>
     
-    <!-- ABOUT SECTION-->
+                            <button class="btn btn-warning btn-lg btn-block mt-3">Lähetä</button>
+                        </div>
+                    </form>                   
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CONTACT SECTION -->
+
+    <!-- FOOTER SECTION -->
+    <footer class="bg-dark p-2 text-center">
+        <div class="container">
+            <p class="text-white">Kaikki oikeudet pidätetään @Snäppi kortti</p>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
