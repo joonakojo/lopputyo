@@ -1,10 +1,10 @@
 const mysql = require('mysql');
 
 const connection = mysql.createConnection({
-  host: 'localhost', // Replace with your host name
-  user: 'root',      // Replace with your database username
-  password: 'OnSeFiksu1234',      // Replace with your database password
-  database: 'nodeapp', // // Replace with your database Name
+  host: 'localhost', 
+  user: 'root',      
+  password: 'OnSeFiksu1234',      
+  database: 'nodeapp', 
   port: 5500
 }); 
 
